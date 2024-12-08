@@ -43,6 +43,10 @@ public partial class App : Application
 
     // MainWindow
     public static WindowEx MainWindow { get; } = new MainWindow();
+    public static UIElement? AppTitlebar
+    {
+        get; set;
+    }
 
     public IHost Host
     {
@@ -281,7 +285,7 @@ public partial class App : Application
 
     private class FilePersistence : IDictionary<string, object>
     {
-        private readonly Dictionary<string, object> _data = new();
+        private readonly Dictionary<string, object> _data = [];
         private readonly string _file;
 
         public FilePersistence(string filename)

@@ -1,9 +1,8 @@
 ﻿using System.Runtime.InteropServices;
-
 using Microsoft.UI;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
-
 using Windows.UI;
 
 namespace XmlClients.Core.Helpers;
@@ -86,6 +85,14 @@ public class TitleBarHelper
                 SendMessage(hwnd, WMACTIVATE, WAACTIVE, IntPtr.Zero);
                 SendMessage(hwnd, WMACTIVATE, WAINACTIVE, IntPtr.Zero);
             }
+        }
+    }
+
+    public static void ApplySystemThemeToCaptionButtons(FrameworkElement? frame, Window win)
+    {
+        if (frame != null)
+        {
+            UpdateTitleBar(frame.ActualTheme, win);
         }
     }
 }

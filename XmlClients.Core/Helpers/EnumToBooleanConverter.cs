@@ -1,6 +1,5 @@
 ﻿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Data;
-using WinUIEx;
 
 namespace XmlClients.Core.Helpers;
 

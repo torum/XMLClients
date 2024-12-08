@@ -5,7 +5,7 @@ using FeedDesk.Contracts.ViewModels;
 using XmlClients.Core.Helpers;
 
 //using CommunityToolkit.WinUI.Animations;
-using CommunityToolkit.WinUI.UI.Animations;
+using CommunityToolkit.WinUI.Animations;
 
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
@@ -128,5 +128,8 @@ public class NavigationService : INavigationService
         }
     }
 
-    public void SetListDataItemForNextConnectedAnimation(object item) => Frame.SetListDataItemForNextConnectedAnimation(item);
+    public void SetListDataItemForNextConnectedAnimation(object item)
+    {
+        Frame?.SetListDataItemForNextConnectedAnimation(item);
+    }
 }
