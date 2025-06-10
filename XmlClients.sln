@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlClients.Core", "XmlClients.Core\XmlClients.Core.csproj", "{48D19E16-7BA2-4DF2-8F45-8A40A4F19224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLClients.Core", "XMLClients.Core\XMLClients.Core.csproj", "{48D19E16-7BA2-4DF2-8F45-8A40A4F19224}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeedDesk", "FeedDesk\FeedDesk.csproj", "{6F88D8B8-6184-4EE3-A922-0DC4FB760630}"
 	ProjectSection(ProjectDependencies) = postProject

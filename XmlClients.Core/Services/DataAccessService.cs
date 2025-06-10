@@ -237,7 +237,8 @@ public class DataAccessService : IDataAccessService
                     res.Error.ErrPlace = "connection.Open(),Transaction.Commit";
                     res.Error.ErrPlaceParent = "DataAccess::InsertFeed";
 
-                    _readerWriterLock.ExitWriteLock();
+                    // TODO: need to check if this really isn't needed.
+                    //_readerWriterLock.ExitWriteLock();
 
                     return res;
                 }
